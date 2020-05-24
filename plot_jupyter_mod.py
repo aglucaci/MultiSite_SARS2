@@ -25,7 +25,7 @@ Date = sys.argv[5]
 # =============================================================================
 # Main
 # =============================================================================
-print("# Processing:", datafile)
+print("    # Processing:", datafile)
 
 data = pd.read_csv(datafile)
 
@@ -51,7 +51,7 @@ fig.savefig("analysis/images/"+Date+"/"+gene+"_pie.png")
 
 
 # =============================================================================
-# Saving to file, csv
+# Saving to file, csv (value_counts)
 # =============================================================================
 
 df = data
@@ -68,6 +68,10 @@ df2.to_csv("analysis/csvs/"+Date+"/"+gene+"_valuecounts.csv")
 
 #datafile = datafile.replace(".csv", "")
 #df.to_csv(datafile+"_withvaluecounts.csv")
+
+
+
+
 # =============================================================================
 # 
 # =============================================================================
